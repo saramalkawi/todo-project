@@ -1,0 +1,56 @@
+.Logo {
+    display: inline-flex;
+}
+h2{
+    color: #bd9999;
+}
+
+ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position:static;
+    background-color: #fafafa;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #bd9999;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #f4e2e2;
+  }
+
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: #c99191;
+  }
+  
+  td, th {
+    border: 1px solid #b65252;
+    text-align: left;
+    padding: 8px;
+   
+  }
+  
+ 
+
+
+  h4{
+    color: #bd9999;
+} 
+
+
