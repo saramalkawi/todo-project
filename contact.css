@@ -1,0 +1,43 @@
+h2{
+    color: #bd9999;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: static;
+    background-color: #fafafa;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #bd9999;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #f4e2e2;
+  }
+  input {
+    color: #bd9999;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  label{
+    color:#bd9999 ;
+  }
+
+  h4{
+    color: #bd9999;
+}
+
+

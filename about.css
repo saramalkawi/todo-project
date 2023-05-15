@@ -1,0 +1,49 @@
+h2{
+    color: #bd9999;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: static;
+    background-color: #fafafa;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #bd9999;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color:#f4e2e2;
+  }
+
+  .srsr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.myName {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+p {
+    color: #bd9999;
+}
+  h4{
+    color: #bd9999;
+}
+
+
+
