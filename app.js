@@ -1,36 +1,39 @@
 'use strict' ; 
+let answers = [];
+
+
+// ask for name 
 let userName = prompt('Please enter your name');
-console.log(userName);
+answers.push(userName);
+
+
+// ask for gender 
 let userGender = prompt('Please enter your gender');
 if (userGender == 'male' || userGender == 'female')
 {
-    console.log(userGender);
+    answers.push(userGender);
 }
 else
  {
-    console.log('invalid');
+    answers.push('invalid');
 }
 
 
-
+// ask for age
 let userAge = prompt('Please enter your age');
-if (userAge > 0 && userAge < 90 ){
+if (userAge <= 0) {
+  alert('Invalid age!');
 
-    console.log(userAge);
+  answers.push('invalid');
+} else {
+    answers.push(userAge);
 }
 
-else 
-{
-    alert ('invalid');
-    console.log('invalid');
-}
-   
 
 
 
 
-
-
+// ask for welcoming message
 function welcomingMessage() {
     let text = "Do You want to skip the welcoming message.\n Press a button!\nEither OK (yes) or Cancel (No).";
     
@@ -50,8 +53,9 @@ function welcomingMessage() {
 }
 welcomingMessage(); 
 
-let answers = []; 
+ 
 
+// ask yes/no question
 function askQuestion(question) {
     let answer = prompt(question);
     if (answer === null || answer.trim() === '') {
