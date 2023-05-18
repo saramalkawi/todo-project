@@ -1,21 +1,21 @@
 'use strict' ; 
-let answers = [];
+
 
 
 // ask for name 
 let userName = prompt('Please enter your name');
-answers.push(userName);
+console.log(userName);
 
 
 // ask for gender 
 let userGender = prompt('Please enter your gender');
 if (userGender == 'male' || userGender == 'female')
 {
-    answers.push(userGender);
+    console.log(userGender);
 }
 else
  {
-    answers.push('invalid');
+    console.log('invalid');
 }
 
 
@@ -24,9 +24,9 @@ let userAge = prompt('Please enter your age');
 if (userAge <= 0) {
   alert('Invalid age!');
 
-  answers.push('invalid');
+  console.log('invalid');
 } else {
-    answers.push(userAge);
+    console.log(userAge);
 }
 
 
@@ -56,18 +56,37 @@ welcomingMessage();
  
 
 // ask yes/no question
+
+let answers = [];
+let arr = ['yes','no','invalid'];
 function askQuestion(question) {
+   
     let answer = prompt(question);
-    if (answer === null || answer.trim() === '') {
-        answer = 'invalid';
+    
+    
+
+    
+      if (answer == arr[0]) {
+        answers.push(answer);
+      
+    } 
+    
+    else if(answer == arr[1]) {
+        answers.push(answer);
+        
     }
-    answers.push(answer);
+    
+    else {
+         answers.push('invalid');
+    
+    }
+    
 }
+
 
 askQuestion('Do you like reading books? (Yes/No)');
 askQuestion('Do you like pasta? (Yes/No)');
 askQuestion('Have you traveled befor? (Yes/No)');
-
 
 console.log(answers);
 
